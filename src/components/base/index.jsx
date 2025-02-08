@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { BASE_URL } from "../../settings/configs";
+import { SwalAlert, SwalToaster } from "../../settings/utils";
 
 function Index() {
     return (
