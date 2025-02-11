@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
 import { BASE_URL } from "../../settings/configs";
 import { SwalAlert, SwalToaster } from "../../settings/utils";
+import Testimonials from "./Testimonials.jsx";
 
 function Index() {
     return (
       <>
-        <section className="px-2 py-20 bg-white md:px-0">
+        <section className="px-2 py-15 bg-white md:px-0">
             <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
                 <div className="flex flex-wrap items-center sm:-mx-3">
                 <div className="w-full md:w-1/2 md:px-3">
@@ -36,9 +37,14 @@ function Index() {
                 </div>
             </div>
             </section>
-
+            {/* <!-- Section  --> */}
+            <section className="w-full bg-white pt-5 pb-5 md:pt-20 md:pb-24">
+                <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
+                    <Testimonials />
+                </div>
+            </section>
             {/* <!-- Section 3 --> */}
-            <section className="w-full bg-white pt-7 pb-7 md:pt-20 md:pb-24">
+            <section className="w-full bg-white pt-5 pb-5 md:pt-20 md:pb-24">
                 <div className="box-border flex flex-col items-center content-center px-8 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-7xl lg:px-16">
 
                     {/* <!-- Image --> */}

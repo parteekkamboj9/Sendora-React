@@ -1,31 +1,16 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
-import Tab from '@mui/material/Tab';
-import TabContext from '@mui/lab/TabContext';
-import TabList from '@mui/lab/TabList';
-import TabPanel from '@mui/lab/TabPanel';
+// import { Carousel } from "flowbite-react";
 
-export default function LabTabs() {
-  const [value, setValue] = React.useState('1');
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
+export default function Testimonials() {
   return (
-    <Box sx={{ width: '100%', typography: 'body1' }}>
-      <TabContext value={value}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <TabList onChange={handleChange} aria-label="lab API tabs example">
-            <Tab label="Item One" value="1" />
-            <Tab label="Item Two" value="2" />
-            <Tab label="Item Three" value="3" />
-          </TabList>
-        </Box>
-        <TabPanel value="1">Item One</TabPanel>
-        <TabPanel value="2">Item Two</TabPanel>
-        <TabPanel value="3">Item Three</TabPanel>
-      </TabContext>
-    </Box>
+    <></>
+    // <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+    //   {/* <Carousel slide={false}> */}
+    //     <img src="https://flowbite.com/docs/images/carousel/carousel-1.svg" alt="..." />
+    //     <img src="https://flowbite.com/docs/images/carousel/carousel-2.svg" alt="..." />
+    //     <img src="https://flowbite.com/docs/images/carousel/carousel-3.svg" alt="..." />
+    //     <img src="https://flowbite.com/docs/images/carousel/carousel-4.svg" alt="..." />
+    //     <img src="https://flowbite.com/docs/images/carousel/carousel-5.svg" alt="..." />
+    //   {/* </Carousel> */}
+    // </div>
   );
 }

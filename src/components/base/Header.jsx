@@ -27,7 +27,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
     ? `rgba(${theme.vars.palette.background.defaultChannel} / 0.3)`
     : alpha(theme.palette.background.default, 0.3),
   boxShadow: (theme.vars || theme).shadows[1],
-  padding: '8px 20px',
+  padding: '10px 20px',
 }));
 
 export default function AppAppBar() {
@@ -45,7 +45,7 @@ export default function AppAppBar() {
         boxShadow: 0,
         bgcolor: 'transparent',
         backgroundImage: 'none',
-        mt: 'calc(var(--template-frame-height, 0px) + 28px)',
+        mt: 'calc(var(--template-frame-height, 0px) + 20px)',
       }}
     >
       <Container maxWidth="lg">
@@ -102,7 +102,7 @@ export default function AppAppBar() {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Box>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1,marginTop: '4px'}}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1, marginTop: '4px'}}>
                   <NavLink to={''} className="text-gray-700">Features</NavLink>
                   <NavLink to={''} className="text-gray-700">Testimonials</NavLink>
                   <NavLink to={''} className="text-gray-700">Highlights</NavLink>
