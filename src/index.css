@@ -4,11 +4,13 @@ html {
     scroll-behavior: smooth !important;
     overflow-x: hidden !important;
 }
+
 body {
     color: #000;
     font-family: 'Montserrat', sans-serif !important;
     scroll-behavior: smooth;
 }
+
 h1,h2,h3,h4,h5,h6 {
     color: #8354d1;
 }
@@ -37,3 +39,40 @@ input {
     padding: 6px 8px !important
 }
 
+.loader {
+    display: none;
+    height: 5px !important;
+    width: 100% !important;
+    --c:no-repeat linear-gradient(#8354d1 0 0);
+    background: var(--c),var(--c),#d7b8fc;
+    background-size: 60% 100%;
+    animation: SendoraLoader 3s infinite;
+    z-index: 99999;
+    position: absolute;
+    top: 0;
+  }
+@keyframes SendoraLoader {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+}
+
+
+/* For webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8354d1;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #eeeeee;
+    border-radius: 0 5px 5px 0;
+}
