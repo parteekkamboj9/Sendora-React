@@ -73,7 +73,7 @@ export default function AppAppBar() {
               alignItems: 'center',
             }}
           >
-            <NavLink to={''} className="text-gray-700">
+            <NavLink to={'/login'} className="text-gray-700">
               Sign in
             </NavLink>
             <Button color="primary" variant="contained" size="small">
@@ -110,8 +110,8 @@ export default function AppAppBar() {
                   <NavLink to={''} className="text-gray-700">FAQ</NavLink>
                   <NavLink to={''} className="text-gray-700">Blog</NavLink>
                   <Divider sx={{ my: 2 }} />
-                  <NavLink to={''} className="text-gray-700">Sign up</NavLink>
-                  <NavLink to={''} className="text-gray-700">Sign in</NavLink>
+                  <NavLink to={'/login'} className="text-gray-700">Sign up</NavLink>
+                  <NavLink to={'/sign-up'} className="text-gray-700">Sign in</NavLink>
                 </Box>
               </Box>
             </Drawer>

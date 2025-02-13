@@ -13,6 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Comps.Index />} />
         <Route path="/blogs" element={<Comps.Blogs />} />
+        <Route path="/login" element={<Comps.LoginSignUp />} />
+        <Route path="/sign-up" element={<Comps.LoginSignUp />} />
 
         {/* This route will match any undefined path */}
         <Route path="*" element={<Comps.NotFound />} />
