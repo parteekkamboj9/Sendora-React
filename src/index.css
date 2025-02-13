@@ -79,7 +79,6 @@ input {
 
 
 /* carousel flowbite-react */
-
 div.carousel-flowbite-react button {
     border-radius: 50% !important;
     padding: 0px !important;
@@ -97,4 +96,18 @@ div.carousel-flowbite-react div.carousel-box span {
     position: relative;
     z-index: 1;
     color: #fff;
+}
+
+/* Accordion Usage */
+div.accordion-usage button {
+    background-color: rgb(147, 147, 147) !important;
+}
+
+div.accordion-usage div {
+    margin-bottom: 10px;
+}
+
+div.accordion-usage button span {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }

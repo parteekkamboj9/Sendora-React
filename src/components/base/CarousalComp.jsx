@@ -1,11 +1,11 @@
 
 import { Carousel } from "flowbite-react";
 
-export default function Testimonials() {
+export default function CarousalComp() {
   return (
     <>
     <div className="h-[32rem] carousel-flowbite-react hidden md:block">
-      <Carousel slide={false} pauseOnHover >
+      <Carousel slide={true} pauseOnHover slideInterval={1000} >
         <div 
           className="flex h-full items-center justify-end carousel-box"
           style={{ backgroundImage: 'url(/static/img/testimonials/get-start.jpg)'}}>
