@@ -1,12 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { BASE_URL } from "../../settings/configs";
+import { BASE_API_URL } from "../../settings/configs";
 import { SwalAlert, SwalToaster } from "../../settings/utils";
 import CarousalComp from "./CarousalComp.jsx";
 import AccordionUsage from "./Faqs";
 
 function Index() {
     return (
-      <>
+      <div className='mt-10'>
         <section className="px-2 py-15 bg-white md:px-0">
             <div className="container items-center max-w-6xl px-8 mx-auto xl:px-5">
                 <div className="flex flex-wrap items-center sm:-mx-3">
@@ -31,8 +31,8 @@ function Index() {
                     </div>
                 </div>
                 <div className="w-full md:w-1/2">
-                    <div className="w-full h-auto over/flow-hidden rounded-md shadow-xl sm:rounded-md ">
-                        <img src="/static/img/home-banner.jpg" />
+                    <div className="w-full h-auto over/flow-hidden rounded-md shadow-xl">
+                        <img className="rounded-md" src="/static/img/home-banner.jpg" />
                     </div>
                 </div>
                 </div>
@@ -110,7 +110,7 @@ function Index() {
 
             {/* <!-- Section 4 --> */}
             <section className="py-20 bg-gray-50">
-            <div className="container items-center max-w-6xl px-4 px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
+            <div className="container items-center max-w-6xl px-10 mx-auto sm:px-20 md:px-32 lg:px-16">
                 <div className="flex flex-wrap items-center -mx-3">
                 <div className="order-1 w-full px-3 lg:w-1/2 lg:order-0">
                     <div className="w-full lg:max-w-md">
@@ -225,7 +225,7 @@ function Index() {
                             We've got a plan for companies of any size
                         </p>
                     </div>
-                    <div className="grid max-w-md mx-auto mt-6 overflow-hidden leading-7 text-gray-900 border border-b-4 border-gray-300 border-blue-600 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-3">
+                    <div className="grid max-w-md mx-auto mt-6 overflow-hidden leading-7 text-gray-900 border border-b-4 border-gray-300 rounded-xl md:max-w-lg lg:max-w-none sm:mt-10 lg:grid-cols-3">
                         <div className="box-border px-4 py-8 mb-6 text-center bg-white border-solid lg:mb-0 sm:px-4 sm:py-8 md:px-8 md:py-12 lg:px-10">
                             <h3 className="m-0 text-2xl font-semibold leading-tight tracking-tight text-black border-0 border-solid sm:text-3xl md:text-4xl">
                                 Basic
@@ -287,7 +287,7 @@ function Index() {
                     </div>
                 </div>
             </section>
-      </>
+      </div>
     );
   }
 export default Index;

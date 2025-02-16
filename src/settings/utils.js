@@ -41,4 +41,14 @@ const SwalAlert = Swal.mixin({
     timer: false,
   });
 
-export { SwalToaster, SwalAlert }
+
+  const loader = (loading, loaderType) => {
+    var outerLoader = document.getElementById(loaderType || 'outerLoaders');
+    if (loading) {
+      outerLoader.classList.remove('hidden');
+    } else {
+      outerLoader.classList.add('hidden');
+    }
+  };
+
+export { SwalToaster, SwalAlert, loader }

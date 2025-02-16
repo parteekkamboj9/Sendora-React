@@ -29,6 +29,7 @@ button {
     border-radius: 6px !important;
     background-color: #8354d1 !important;
     transition: background-color 0.3s ease, border-radius 0.3s ease !important;
+    cursor: pointer;
 }
 button:hover {
     border-radius: 4px !important;
@@ -39,8 +40,20 @@ input {
     padding: 6px 8px !important
 }
 
+#outerLoaders {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    background-color: #00000047;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
 .loader {
-    display: none;
     height: 5px !important;
     width: 100% !important;
     --c:no-repeat linear-gradient(#8354d1 0 0);
