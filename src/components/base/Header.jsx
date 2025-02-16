@@ -51,19 +51,17 @@ export default function AppAppBar() {
       <Container maxWidth="lg">
         <StyledToolbar variant="dense" disableGutters>
           <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center', pr: 2 }}>
-            {          
-            <div className='flex justify-center items-center gap-0 mr-5'>
+            {
+            <NavLink to={'/'} className='flex justify-center items-center gap-0 mr-5'>
                 <img src='/static/icons/logo.svg' className='w-6' />
                 <span className='text-primary pt-0.5'>Sendora</span>
-            </div>
+            </NavLink>
             }
             <Box sx={{ display: { xs: 'none', md: 'flex' } }} className="space-x-4">
               <NavLink to={''} className="text-gray-700">Features</NavLink>
               <NavLink to={''} className="text-gray-700">Testimonials</NavLink>
               <NavLink to={''} className="text-gray-700">Highlights</NavLink>
               <NavLink to={''} className="text-gray-700">Pricing</NavLink>
-              <NavLink to={''} className="text-gray-700">FAQ</NavLink>
-              <NavLink to={''} className="text-gray-700">Blog</NavLink>
             </Box>
           </Box>
           <Box
@@ -107,8 +105,6 @@ export default function AppAppBar() {
                   <NavLink to={''} className="text-gray-700">Testimonials</NavLink>
                   <NavLink to={''} className="text-gray-700">Highlights</NavLink>
                   <NavLink to={''} className="text-gray-700">Pricing</NavLink>
-                  <NavLink to={''} className="text-gray-700">FAQ</NavLink>
-                  <NavLink to={''} className="text-gray-700">Blog</NavLink>
                   <Divider sx={{ my: 2 }} />
                   <NavLink to={'/login'} className="text-gray-700">Sign up</NavLink>
                   <NavLink to={'/sign-up'} className="text-gray-700">Sign in</NavLink>
