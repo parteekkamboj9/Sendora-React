@@ -3,4 +3,9 @@ export { default as Blogs }  from './components/base/Blogs.jsx';
 export { default as Header }  from './components/base/Header.jsx';
 export { default as Footer }  from './components/base/Footer.jsx';
 export { default as LoginSignUp }  from './components/base/LoginSignUp.jsx';
+
+// User Dashboard
+export { default as UserRoutes }  from './components/user/index.jsx';
+
+// All Routes
 export { default as NotFound }  from './components/base/NotFound.jsx';
