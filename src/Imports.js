@@ -5,7 +5,10 @@ export { default as Footer }  from './components/base/Footer.jsx';
 export { default as LoginSignUp }  from './components/base/LoginSignUp.jsx';
 
 // User Dashboard
-export { default as UserRoutes }  from './components/user/index.jsx';
+export { default as UserDashboard }  from './components/user/index';
+export { default as Overview }  from './components/user/Overview';
+export { default as Dashboard }  from './components/user/Dashboard';
+
 
 // All Routes
 export { default as NotFound }  from './components/base/NotFound.jsx';

@@ -69,7 +69,7 @@ export default function LoginSignUp() {
                 required
               />
             </div>
-            <button type="submit" className="w-full py-2 px-4 items-center justify-center flex flex-row">
+            <button type="submit" className=" btn-primary w-full py-2 px-4 items-center justify-center flex flex-row">
               Sign In <img src="/static/icons/arrow-right.svg" className="w-6" />
             </button>
           </form>

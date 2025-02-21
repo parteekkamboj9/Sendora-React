@@ -1,19 +1,16 @@
-import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import * as Comps from './Imports.js';
+// Dashboard.js
+import React from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
+import SideBar from './Sidebar.jsx';
 
-
-export default function UserRoutes() {
+const UserDashboard = () => {
   return (
-    <Routes>
-        <Route path="/" element={<Comps.Dashboard />} />
-        {/* <Route path="/blogs" element={<Comps.Blogs />} />
-        <Route path="/login" element={<Comps.LoginSignUp />} />
-        <Route path="/sign-up" element={<Comps.LoginSignUp />} />
-        <Route path="/google-callback" element={<Comps.Index />} /> */}
+    <div className=''>
+      <SideBar />
+      {/* The Outlet is where nested routes will be rendered */}
+      <Outlet />
+    </div>
+  );
+};
 
-        {/* This route will match any undefined path */}
-        {/* <Route path="*" element={<Comps.NotFound />} /> */}
-    </Routes>
-  )
-}
+export default UserDashboard;
