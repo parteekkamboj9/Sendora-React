@@ -31,7 +31,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 }));
 
 export default function AppAppBar() {
-  console.log("+++++++++++++++")
+
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
@@ -76,9 +76,9 @@ export default function AppAppBar() {
               Sign in
             </NavLink>
             <NavLink to={'/sign-up'}>
-              <Button color="primary" variant="contained" size="small">
+              <button className='btn-primary' color="primary" variant="contained" size="small">
                 Sign up
-              </Button>
+              </button>
             </NavLink>
           </Box>
           <Box sx={{ display: { xs: 'flex', md: 'none' }, gap: 1 }}>

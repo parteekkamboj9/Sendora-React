@@ -23,7 +23,7 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #8354d1 !important;
 }
 
-button {
+button.btn-primary {
     color: #fff !important;
     padding: 4px 8px !important;
     border-radius: 6px !important;
@@ -31,9 +31,13 @@ button {
     transition: background-color 0.3s ease, border-radius 0.3s ease !important;
     cursor: pointer;
 }
-button:hover {
+button.btn-primary:hover {
     border-radius: 4px !important;
     background-color: #7c44dd !important;
+}
+button:hover {
+    border-radius: 4px;
+    background-color: #7c44dd;
 }
 
 input {
