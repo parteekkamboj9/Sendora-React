@@ -35,10 +35,6 @@ button.btn-primary:hover {
     border-radius: 4px !important;
     background-color: #7c44dd !important;
 }
-button:hover {
-    border-radius: 4px;
-    background-color: #7c44dd;
-}
 
 input {
     padding: 6px 8px !important
