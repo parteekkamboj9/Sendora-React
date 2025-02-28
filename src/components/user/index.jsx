@@ -5,10 +5,12 @@ import SideBar from './Sidebar.jsx';
 
 const UserDashboard = () => {
   return (
-    <div className=''>
+    <div className='flex flex-row'>
       <SideBar />
-      {/* The Outlet is where nested routes will be rendered */}
-      <Outlet />
+      <div>
+        {/* The Outlet is where nested routes will be rendered */}
+        <Outlet />
+      </div>
     </div>
   );
 };
