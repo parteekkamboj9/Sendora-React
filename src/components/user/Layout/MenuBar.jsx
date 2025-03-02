@@ -8,13 +8,14 @@ import Badge from '@mui/material/Badge';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { useNavigate } from 'react-router-dom';
 
-export default function MenuBar({ openSidebar }) {
+export default function MenuBar({ openSidebar, isOpen }) {
     const navigate = useNavigate();
     const [anchorEl, setAnchorEl] = React.useState(null);
     const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -115,7 +116,7 @@ export default function MenuBar({ openSidebar }) {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="static" className='bg-primary'>
+            <AppBar position="absolute" className='!bg-gray-800 !shadow-none'>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -124,7 +125,11 @@ export default function MenuBar({ openSidebar }) {
                         aria-label="open drawer"
                         sx={{ mr: 2 }}
                     >
-                        <MenuIcon onClick={() => openSidebar(true)} />
+                        {isOpen ?
+                            <MenuOpenIcon onClick={() => openSidebar(true)} />
+                            :
+                            <MenuIcon onClick={() => openSidebar(true)} />
+                        }
                     </IconButton>
                     <Typography
                         variant="h6"
@@ -132,7 +137,7 @@ export default function MenuBar({ openSidebar }) {
                         component="div"
                         sx={{ display: { xs: 'none', sm: 'block' } }}
                     >
-                        Sendora
+                        Dashboard
                     </Typography>
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

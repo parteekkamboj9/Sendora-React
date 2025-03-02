@@ -1,13 +1,13 @@
 // Dashboard.js
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
-import SideBar from './Sidebar.jsx';
+import Layout from './Layout/index.jsx';
 
 const UserDashboard = () => {
   return (
     <div className='flex flex-row'>
-      <SideBar />
-      <div>
+      <Layout />
+      <div className='w-full mt-20'>
         {/* The Outlet is where nested routes will be rendered */}
         <Outlet />
       </div>
