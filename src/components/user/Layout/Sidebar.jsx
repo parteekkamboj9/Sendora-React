@@ -5,9 +5,9 @@ import { useNavigate } from 'react-router-dom';
 const SideBar = ({ isOpen }) => {
 
   return (
-    <div className={`flex h-screen bg-gray-800 ${isOpen ? 'w-60' : 'w-20'} transition-all duration-300`}>
+    <div className={`flex h-screen bg-gray-800 ${isOpen ? 'w-40' : 'w-20'} transition-all duration-300`}>
       {/* SideBar */}
-      <div className={`flex flex-col items-center bg-gray-800 text-white ${isOpen ? 'w-60' : 'w-14'} transition-all duration-300`}>
+      <div className={`flex flex-col items-center bg-gray-800 text-white ${isOpen ? 'w-40' : 'w-14'} transition-all duration-300`}>
 
         {/* SideBar Menu */}
         <div className={`flex flex-col items-center space-y-3 w-full mt-20 ${isOpen ? 'px-2' : 'px-1'}`}>
@@ -19,10 +19,6 @@ const SideBar = ({ isOpen }) => {
         </div>
       </div>
 
-      {/* Main Content Area */}
-      <div className="flex-1 p-6 bg-gray-100">
-        {/* Content will go here */}
-      </div>
     </div>
   );
 };
